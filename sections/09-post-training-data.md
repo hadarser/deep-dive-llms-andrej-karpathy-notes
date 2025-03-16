@@ -33,8 +33,8 @@ Conversations:
 2. **Define the tokenization format**: Define the tokenization format for the data, translating the conversation structure to a single tokens stream, such as `gpt-4o`:
 > <|im_start|>user<|im_sep|>What is 2+2?<|im_end|>
 > <|im_start|>assistant<|im_sep|>2+2 = 4<|im_end|>
-> <|im_start|>user<|im_sep|>What if it was *?<|im_end|>
-> <|im_start|>assistant<|im_sep|>2*2 = 4, same as 2+2!<| im_end|>
+> <|im_start|>user<|im_sep|>What if it was \*?<|im_end|>
+> <|im_start|>assistant<|im_sep|>2\*2 = 4, same as 2+2!<| im_end|>
 3. During inference, the model will get as input a stream ending in "...<|im_start|>assistant<|im_sep|>", and will generate the next assistant response.
 
 
